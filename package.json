@@ -1,0 +1,19 @@
+{
+  "name": "radzip",
+  "version": "0.0.0",
+  "description": "CLI tool for editing Radiant archives (.rad)",
+  "bin": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frqstbite/radzip.git"
+  },
+  "author": "frqstbite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frqstbite/radzip/issues"
+  },
+  "homepage": "https://github.com/frqstbite/radzip#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
