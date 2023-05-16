@@ -1,19 +1,33 @@
 {
-  "name": "radzip",
+  "name": "@radiantos/rad",
   "version": "0.0.0",
-  "description": "CLI tool for editing Radiant archives (.rad)",
-  "bin": "./index.js",
+  "description": "Package and CLI tool for handling Radiant archives (.rad)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "rad": "./dist/index.js"
+  },
+  "scripts": {
+    "build:compile": "tsc",
+    "build": "npm run build:compile && npm publish --access public",
+    "test": "npm run build:compile && node ./dist/index.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frqstbite/radzip.git"
+    "url": "git+https://github.com/frqstbite/radjs.git"
   },
   "author": "frqstbite",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frqstbite/radzip/issues"
+    "url": "https://github.com/frqstbite/radjs/issues"
   },
-  "homepage": "https://github.com/frqstbite/radzip#readme",
+  "homepage": "https://github.com/frqstbite/radjs#readme",
   "dependencies": {
-    "minimist": "^1.2.8"
+    "commander": "^10.0.1",
+    "minimist": "^1.2.8",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
